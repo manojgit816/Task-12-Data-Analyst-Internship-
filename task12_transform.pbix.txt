@@ -1,0 +1,36 @@
+Remove IDs or irrelevant columns
+Example:
+
+EmployeeNumber
+
+RowID
+
+CustomerID (if not needed)
+--Rename columns--
+| Old Name      | New Name     |
+| ------------- | ------------ |
+| MonthlyIncome | Salary       |
+| Attrition     | Churn Status |
+| JobRole       | Role         |
+--Handling missing values--
+| Column     | Action                        |
+| ---------- | ----------------------------- |
+| Age        | Replace null with average age |
+| Salary     | Replace null with median      |
+| Department | Replace null with "Unknown"   |
+--Change Data Types--
+| Column       | Type         |
+| ------------ | ------------ |
+| Age          | Whole Number |
+| Salary       | Currency     |
+| Date         | Date         |
+| Churn Status | Text         |
+--Create new colums--
+if [Age] < 30 then "Young"
+else if [Age] <= 50 then "Mid-Age"
+else "Senior"
+if [Salary] < 3000 then "Low"
+else if [Salary] < 7000 then "Medium"
+else "High"
+Split “Full Name” → First Name, Last Name
+City + State → “Location”

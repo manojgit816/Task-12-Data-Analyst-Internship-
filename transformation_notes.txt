@@ -1,0 +1,29 @@
+Steps performed:
+
+Removed unnecessary identifier columns.
+
+Renamed columns for clarity.
+
+Handled missing values using mean/median and default labels.
+
+Converted columns to appropriate datatypes.
+
+Created derived columns:
+
+Age Group
+
+Salary Band
+
+Split Full Name into First & Last Name.
+
+Merged City and State into Location.
+
+Loaded cleaned data to Power BI model.
+
+Visualizations built:
+
+Churn by Department
+
+Employees by Age Group
+
+Salary Band Distribution
